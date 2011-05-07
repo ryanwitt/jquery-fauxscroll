@@ -8,6 +8,9 @@ This plugins is build with multi platform support. It behaves exactly the same o
 Dependencies
 ===================================
 jQuery 1.5.2+ (https://github.com/jquery/jquery)
+
+jQuery Platform Plugin (https://github.com/jvduf/jquery-platform)
+
 jQuery Fix Body Plugin (https://github.com/jvduf/jquery-fixbody)
 
 
