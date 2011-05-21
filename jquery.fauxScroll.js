@@ -911,7 +911,6 @@
             // just trigger the default (touchend/mouseup) event without doing
             // anything after that.
             if (!state.moved) {
-                me.trigger(e);
                 return;
             };
 
@@ -925,6 +924,8 @@
                     onFauxScrollEnd('scrollEnd');
                 };
 
+                e.preventDefault();
+                e.stopPropagation();
                 return;
             };
 
@@ -964,6 +965,11 @@
                 resetDestination();
             } else if (isScrollPositionWithinBounds()) {
                 onFauxScrollEnd('scrollEnd');
+            };
+
+            if (scrollToNewDestination || isScrollPositionOutOfBounds() || isScrollPositionWithinBounds()) {
+                e.preventDefault();
+                e.stopPropagation();
             };
         };
 
