@@ -65,7 +65,7 @@
 
 
         if (methods[call]) {
-            if (state.initialized) {
+            if (state && state.initialized) {
                 return methods[call].apply(me, Array.prototype.slice.call(arguments, 1));
             } else {
                 return me;
