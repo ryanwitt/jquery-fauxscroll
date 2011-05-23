@@ -156,7 +156,7 @@
 
             // Create the wrapperEl, apply the initial CSS and wrap it around
             // the el.
-            var wrapperEl = $('<div class="jquery-faux-scroll-wrapper"></div>');
+            var wrapperEl = $('<div class="faux-scroll-wrapper"></div>');
             wrapperEl.css('cssText', '' +
             'height: 100%;' +
             'max-height: 100%;' +
@@ -167,7 +167,7 @@
             me.el.wrap(wrapperEl);
 
             // Create the scrollEl.
-            var scrollEl = $('<div class="jquery-faux-scroll"></div>');
+            var scrollEl = $('<div class="faux-scroll"></div>');
 
             // Apply initial CSS to the scrollEl if needed.
             if ((support.hasTouch || settings.desktopCompatibility) && !settings.forceNativeScroll) {
