@@ -2,7 +2,7 @@ jQuery Faux Scroll
 ===================================
 Mobile Webkit browsers on touch enabled devices do not support fixed layout. With the jQuery Fix Body Plugin you can create fixed layouts, but you'll lose the native scroll features. This plugin turns every container into scrollable element and re-enables scrolling. Think of it as a container element with overflow: scroll applied to it.
 
-This plugins is build with multi platform support. It behaves exactly the same on mobile and desktop Webkit browser.
+This plugin is built with multi platform support. It behaves exactly the same on mobile and desktop Webkit browser.
 
 
 Dependencies
